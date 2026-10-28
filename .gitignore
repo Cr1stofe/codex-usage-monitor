@@ -1,0 +1,6 @@
+node_modules/
+dist/
+artifacts/
+VALIDATION.md
+*.vsix
+.DS_Store

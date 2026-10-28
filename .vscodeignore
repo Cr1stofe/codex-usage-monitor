@@ -1,0 +1,13 @@
+src/**
+test/**
+.vscode/**
+node_modules/**
+artifacts/**
+.git/**
+.gitignore
+.vscodeignore
+tsconfig.json
+eslint.config.mjs
+package-lock.json
+VALIDATION.md
+**/*.vsix
