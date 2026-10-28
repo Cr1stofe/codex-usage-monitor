@@ -1,4 +1,4 @@
-# Codex Limits Monitor
+# Codex Usage Monitor
 
 A personal macOS VS Code extension that displays used percentages of the Codex five-hour and weekly plan limits and reset countdowns in the status bar, with conversation token usage in the tooltip.
 
@@ -12,6 +12,8 @@ Example: **5h 40% · 2h30  |  Week 15% · 3d**. Percentages are used quota; the 
 4. Reload VS Code if prompted. Both limits appear together in the bottom status bar.
 
 You can also install with `code --install-extension artifacts/codex-tokens-monitor-0.1.0.vsix`. To update an existing installation, append `--force` and run **Developer: Reload Window** in VS Code.
+
+The installed extension ID remains `local-codex-tools.codex-tokens-monitor`, and the VSIX filename retains `codex-tokens-monitor` so existing installations can be updated.
 
 Requires VS Code 1.96 or newer, local macOS, and local Codex session records. Node.js 22.14+ is recommended for development and packaging. No separate runtime, API key or account login is needed for this extension.
 
