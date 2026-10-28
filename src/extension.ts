@@ -5,7 +5,7 @@ import { selectSession, sessionsForWorkspace } from './session-selection';
 import type { MonitorState } from './quota';
 
 export function activate(context: vscode.ExtensionContext): void {
-  const output = vscode.window.createOutputChannel('Codex Limits — Diagnostics');
+  const output = vscode.window.createOutputChannel('Codex Usage — Diagnostics');
   const limits = vscode.window.createStatusBarItem('codexLimits.usage', vscode.StatusBarAlignment.Right, 101);
   limits.name = 'Codex — usage limits';
   limits.command = 'codexTokensMonitor.menu';
@@ -87,7 +87,7 @@ export function activate(context: vscode.ExtensionContext): void {
         { label: '$(settings-gear) Open settings', command: 'codexTokensMonitor.settings' },
         { label: '$(output) View diagnostics', command: 'codexTokensMonitor.diagnostics' },
       ];
-      const selection = await vscode.window.showQuickPick(options, { title: 'Codex Limits Monitor' });
+      const selection = await vscode.window.showQuickPick(options, { title: 'Codex Usage Monitor' });
       if (selection) await vscode.commands.executeCommand(selection.command);
     }),
   );

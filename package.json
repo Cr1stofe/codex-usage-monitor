@@ -1,6 +1,6 @@
 {
   "name": "codex-tokens-monitor",
-  "displayName": "Codex Limits Monitor",
+  "displayName": "Codex Usage Monitor",
   "description": "Monitor local Codex five-hour and weekly plan limits in the status bar.",
   "version": "0.1.0",
   "publisher": "local-codex-tools",
@@ -13,14 +13,14 @@
   "capabilities": { "untrustedWorkspaces": { "supported": true }, "virtualWorkspaces": false },
   "contributes": {
     "commands": [
-      { "command": "codexTokensMonitor.menu", "title": "Codex Limits: Open Menu" },
-      { "command": "codexTokensMonitor.selectSession", "title": "Codex Limits: Select Conversation" },
-      { "command": "codexTokensMonitor.refresh", "title": "Codex Limits: Refresh" },
-      { "command": "codexTokensMonitor.settings", "title": "Codex Limits: Open Settings" },
-      { "command": "codexTokensMonitor.diagnostics", "title": "Codex Limits: View Diagnostics" }
+      { "command": "codexTokensMonitor.menu", "title": "Codex Usage: Open Menu" },
+      { "command": "codexTokensMonitor.selectSession", "title": "Codex Usage: Select Conversation" },
+      { "command": "codexTokensMonitor.refresh", "title": "Codex Usage: Refresh" },
+      { "command": "codexTokensMonitor.settings", "title": "Codex Usage: Open Settings" },
+      { "command": "codexTokensMonitor.diagnostics", "title": "Codex Usage: View Diagnostics" }
     ],
     "configuration": {
-      "title": "Codex Limits Monitor",
+      "title": "Codex Usage Monitor",
       "properties": {
         "codexTokensMonitor.codexHome": {
           "type": "string", "default": "", "scope": "machine",
